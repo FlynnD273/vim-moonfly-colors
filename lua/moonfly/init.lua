@@ -100,6 +100,7 @@ M.style = function()
   highlight(0, "MoonflyGrey241", { fg = grey241 })
   highlight(0, "MoonflyGrey239", { fg = grey239 })
   highlight(0, "MoonflyGrey238", { fg = grey238 })
+  highlight(0, "MoonflyGrey237", { fg = grey237 })
   highlight(0, "MoonflyGrey236", { fg = grey236 })
   highlight(0, "MoonflyGrey235", { fg = grey235 })
   highlight(0, "MoonflyKhaki", { fg = khaki })
@@ -591,9 +592,9 @@ M.style = function()
   highlight(0, "TagbarKind", { link = "MoonflyEmerald" })
 
   -- fern.vim plugin
-  highlight(0, "FernBranchSymbol", { link = "MoonflyGrey241" })
+  highlight(0, "FernBranchSymbol", { link = "MoonflyGrey246" })
   highlight(0, "FernLeafSymbol", { link = "MoonflyBlue" })
-  highlight(0, "FernLeaderSymbol", { link = "MoonflyGrey239" })
+  highlight(0, "FernLeaderSymbol", { link = "MoonflyGrey237" })
   highlight(0, "FernBranchText", { link = "MoonflyBlue" })
   highlight(0, "FernMarkedLine", { link = "MoonflyVisual" })
   highlight(0, "FernMarkedText", { link = "MoonflyCrimson" })
@@ -681,9 +682,9 @@ M.style = function()
   -------------------------------------------------------------------------
 
   -- NvimTree plugin
-  highlight(0, "NvimTreeFolderIcon", { link = "MoonflyGrey241" })
+  highlight(0, "NvimTreeFolderIcon", { link = "MoonflyGrey246" })
   highlight(0, "NvimTreeFolderName", { link = "MoonflyBlue" })
-  highlight(0, "NvimTreeIndentMarker", { link = "MoonflyGrey239" })
+  highlight(0, "NvimTreeIndentMarker", { link = "MoonflyGrey237" })
   highlight(0, "NvimTreeOpenedFolderName", { link = "MoonflyBlue" })
   highlight(0, "NvimTreeRootFolder", { link = "MoonflyPurple" })
   highlight(0, "NvimTreeSpecialFile", { link = "MoonflyYellow" })
@@ -700,13 +701,15 @@ M.style = function()
   -- Neo-tree plugin
   highlight(0, "NeoTreeCursorLine", { bg = grey235 })
   highlight(0, "NeoTreeDimText", { link = "MoonflyGrey239" })
-  highlight(0, "NeoTreeDirectoryIcon", { link = "MoonflyGrey241" })
-  highlight(0, "NeoTreeDotfile", { link = "MoonflyGrey236" })
+  highlight(0, "NeoTreeDirectoryIcon", { link = "MoonflyGrey246" })
+  highlight(0, "NeoTreeDotfile", { link = "MoonflyGrey246" })
   highlight(0, "NeoTreeFloatTitle", { bg = grey236, fg = white })
+  highlight(0, "NeoTreeFilterTerm", { link = "MoonflyBlue" })
   highlight(0, "NeoTreeGitAdded", { link = "MoonflyGreen" })
   highlight(0, "NeoTreeGitConflict", { link = "MoonflyCrimson" })
   highlight(0, "NeoTreeGitModified", { link = "MoonflyTurquoise" })
-  highlight(0, "NeoTreeGitUntracked", { link = "MoonflyGrey241" })
+  highlight(0, "NeoTreeGitUntracked", { link = "MoonflyOrchid" })
+  highlight(0, "NeoTreeIndentMarker", { link = "MoonflyGrey237" })
   highlight(0, "NeoTreeMessage", { link = "MoonflyGrey247" })
   highlight(0, "NeoTreeModified", { link = "MoonflyYellow" })
   highlight(0, "NeoTreeRootName", { link = "MoonflyPurple" })
@@ -836,6 +839,12 @@ M.style = function()
   highlight(0, "IndentBlanklineChar", { fg = grey235, nocombine = true })
   highlight(0, "IndentBlanklineSpaceChar", { fg = grey235, nocombine = true })
   highlight(0, "IndentBlanklineSpaceCharBlankline", { fg = grey235, nocombine = true })
+  highlight(0, "IndentBlanklineIndent6", { link = "MoonflyOrchid" })
+  highlight(0, "IndentBlanklineIndent5", { link = "MoonflyViolet" })
+  highlight(0, "IndentBlanklineIndent4", { link = "MoonflyBlue" })
+  highlight(0, "IndentBlanklineIndent3", { link = "MoonflyTurquoise" })
+  highlight(0, "IndentBlanklineIndent2", { link = "MoonflyYellow" })
+  highlight(0, "IndentBlanklineIndent1", { link = "MoonflyCrimson" })
 
   -- Mini.nvim plugin
   highlight(0, "MiniCompletionActiveParameter", { link = "MoonflyVisual" })
@@ -1005,7 +1014,7 @@ M.style = function()
   highlight(0, "NavicIconsTypeParameter", { link = "NavicIconsEnumMember" })
   highlight(0, "NavicIconsVariable", { link = "NavicIconsEnumMember" })
 
-  -- Rainbow Delimiters
+  -- Rainbow Delimiters plugin
   highlight(0, "RainbowDelimiterRed", { link = "MoonflyRed" })
   highlight(0, "RainbowDelimiterYellow", { link = "MoonflyYellow" })
   highlight(0, "RainbowDelimiterBlue", { link = "MoonflyBlue" })
@@ -1014,7 +1023,7 @@ M.style = function()
   highlight(0, "RainbowDelimiterViolet", { link = "MoonflyViolet" })
   highlight(0, "RainbowDelimiterCyan", { link = "MoonflyTurquoise" })
 
-  -- Neogit
+  -- Neogit plugin
   highlight(0, "NeogitBranch", { link = "MoonflySky" })
   highlight(0, "NeogitDiffAddHighlight", { link = "MoonflyEmeraldLine" })
   highlight(0, "NeogitDiffContextHighlight", { bg = grey234 })
@@ -1022,6 +1031,12 @@ M.style = function()
   highlight(0, "NeogitHunkHeader", { link = "Pmenu" })
   highlight(0, "NeogitHunkHeaderHighlight", { link = "MoonflyBlueLineActive" })
   highlight(0, "NeogitRemote", { link = "MoonflyPurple" })
+
+  -- nvim-window-picker plugin
+  highlight(0, "WindowPickerStatusLine", { link = "WinBar" })
+  highlight(0, "WindowPickerStatusLineNC", { link = "WinBar" })
+  highlight(0, "WindowPickerWinBar", { link = "WinBar" })
+  highlight(0, "WindowPickerWinBarNC", { link = "WinBar" })
 end
 
 return M

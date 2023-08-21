@@ -52,6 +52,7 @@ function! moonfly#Style() abort
     exec 'highlight MoonflyGrey241 guifg=' . s:grey241
     exec 'highlight MoonflyGrey239 guifg=' . s:grey239
     exec 'highlight MoonflyGrey238 guifg=' . s:grey238
+    exec 'highlight MoonflyGrey237 guifg=' . s:grey237
     exec 'highlight MoonflyGrey236 guifg=' . s:grey236
     exec 'highlight MoonflyGrey235 guifg=' . s:grey235
     exec 'highlight MoonflyKhaki guifg=' . s:khaki
@@ -638,7 +639,7 @@ function! moonfly#Style() abort
     highlight! link TagbarKind MoonflyEmerald
 
     " NERDTree plugin
-    highlight! link NERDTreeClosable MoonflyGrey247
+    highlight! link NERDTreeClosable MoonflyGrey246
     highlight! link NERDTreeCWD MoonflyPurple
     highlight! link NERDTreeDir MoonflySky
     highlight! link NERDTreeDirSlash MoonflyCranberry
@@ -648,7 +649,7 @@ function! moonfly#Style() abort
     highlight! link NERDTreeLinkDir MoonflyBlue
     highlight! link NERDTreeLinkFile MoonflyBlue
     highlight! link NERDTreeLinkTarget MoonflyTurquoise
-    highlight! link NERDTreeOpenable MoonflyGrey247
+    highlight! link NERDTreeOpenable MoonflyGrey246
     highlight! link NERDTreePart MoonflyGrey0
     highlight! link NERDTreePartFile MoonflyGrey0
     highlight! link NERDTreeUp MoonflyBlue
@@ -661,9 +662,9 @@ function! moonfly#Style() abort
     highlight! link NERDTreeGitStatusUntracked MoonflyRed
 
     " fern.vim plugin
-    highlight! link FernBranchSymbol MoonflyGrey241
+    highlight! link FernBranchSymbol MoonflyGrey246
     highlight! link FernLeafSymbol MoonflyBlue
-    highlight! link FernLeaderSymbol MoonflyGrey239
+    highlight! link FernLeaderSymbol MoonflyGrey237
     highlight! link FernBranchText MoonflyBlue
     highlight! link FernMarkedLine MoonflyVisual
     highlight! link FernMarkedText MoonflyCrimson
