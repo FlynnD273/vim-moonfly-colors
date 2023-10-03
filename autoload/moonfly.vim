@@ -36,6 +36,8 @@ let s:crimson   = '#ff5189'
 let s:red       = '#ff5454'
 " Extra colors
 let s:spring    = '#00875f'
+let s:mineral   = '#314940'
+let s:bay       = '#4d5d8d'
 
 function! moonfly#Style() abort
     "-----------------------------------------------------------------------
@@ -198,7 +200,6 @@ function! moonfly#Style() abort
     " Visual selection
     highlight! link Visual MoonflyVisual
     exec 'highlight VisualNOS guibg=' . s:grey0 . ' guifg=fg gui=none'
-    exec 'highlight VisualInDiff guibg=' . s:grey0 . ' guifg=' . s:white
 
     " Errors, warnings and whitespace-eol
     exec 'highlight Error guibg=bg guifg=' . s:red
@@ -261,10 +262,10 @@ function! moonfly#Style() abort
     exec 'highlight Conceal guibg=NONE guifg=' . s:grey249
 
     " vimdiff -d
-    exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=' . s:black
+    exec 'highlight DiffAdd guibg=' . s:mineral
     exec 'highlight DiffChange guibg=' . s:grey236
     exec 'highlight DiffDelete guibg=' . s:grey236 . ' guifg=' . s:grey241 . ' gui=none'
-    exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
+    exec 'highlight DiffText guibg=' . s:bay
 
     "-----------------------------------------------------------------------
     " Language styling
@@ -380,6 +381,13 @@ function! moonfly#Style() abort
     highlight! link haskellType MoonflySky
     highlight! link haskellWhere MoonflyViolet
 
+    " Help
+    highlight! link helpCommand MoonflyOrchid
+    highlight! link helpExample MoonflyGreen
+    highlight! link helpHeadline MoonflyBlue
+    highlight! link helpHyperTextEntry MoonflyTurquoise
+    highlight! link helpSectionDelim MoonflyBlue
+
     " HTML
     highlight! link htmlArg MoonflyTurquoise
     highlight! link htmlLink MoonflyGreen
@@ -449,8 +457,16 @@ function! moonfly#Style() abort
     highlight! link markdownCode MoonflyKhaki
     highlight! link markdownCodeDelimiter MoonflyKhaki
     highlight! link markdownError NormalNC
-    highlight! link markdownH1 MoonflyBlue
+    highlight! link markdownH1 MoonflyEmerald
     highlight! link markdownH2 MoonflyBlue
+    highlight! link markdownH3 MoonflyTurquoise
+    highlight! link markdownH3Delimiter MoonflyCrimson
+    highlight! link markdownH4 MoonflyOrange
+    highlight! link markdownH4Delimiter MoonflyCrimson
+    highlight! link markdownH5 MoonflySky
+    highlight! link markdownH5Delimiter MoonflyCrimson
+    highlight! link markdownH6 MoonflyViolet
+    highlight! link markdownH6Delimiter MoonflyCrimson
     highlight! link markdownHeadingRule MoonflyCranberry
     highlight! link markdownItalic MoonflyOrchid
     highlight! link markdownUrl MoonflyPurple
@@ -692,8 +708,6 @@ function! moonfly#Style() abort
     highlight! link CtrlPMatch MoonflyCoral
     highlight! link Directory MoonflyBlue
     highlight! link erubyDelimiter MoonflyCrimson
-    highlight! link helpHeadline MoonflyBlue
-    highlight! link helpSectionDelim MoonflyBlue
     highlight! link HighlightedyankRegion MoonflyGrey0
     highlight! link jsonKeyword MoonflySky
     highlight! link jsonQuote MoonflyWhite
